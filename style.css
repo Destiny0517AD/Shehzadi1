@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #1a1a2e, #16213e);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.glow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top, rgba(255,182,193,0.2), transparent 60%);
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+header p {
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.event {
+  background: rgba(255,255,255,0.15);
+  padding: 25px;
+  border-radius: 20px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.4s;
+}
+
+.event:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.event span {
+  font-size: 2rem;
+}
+
+.gallery {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.images img {
+  width: 220px;
+  border-radius: 20px;
+  transition: 0.4s;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.images img:hover {
+  transform: scale(1.1) rotate(1deg);
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  opacity: 0.9;
+}
